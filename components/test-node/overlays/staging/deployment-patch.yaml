@@ -16,7 +16,7 @@ spec:
       - env:
         - name: env
           value: staging
-        image: quay.io/karthik_jk/test-node@sha256:6b2f8b845fb790c6823b0b1b8d8707ae6b973e527fc2d841c3f411de3931281c
+        image: quay.io/karthik_jk/test-node@sha256:9a714c31066f163057f543e4d52f775a1a27dbdda4d2026a9917bbab16e4e580
         name: container-image
         resources: {}
 status: {}
