@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-node
+  namespace: jephilli
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: env
+          value: staging
+        image: quay.io/karthik_jk/test-node@sha256:6b2f8b845fb790c6823b0b1b8d8707ae6b973e527fc2d841c3f411de3931281c
+        name: container-image
+        resources: {}
+status: {}
